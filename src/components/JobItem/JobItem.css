@@ -1,0 +1,104 @@
+.JobItem {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    background-color: aliceblue;
+   gap: 12px;
+   border-radius: 8px;
+   padding: 16px;
+   box-sizing: border-box;
+}
+
+
+.JobInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.Qualifications {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Qualifications > button {
+    border: none;
+    background-color: hsl(180, 52%, 96%);
+    padding: 6px;
+    font-weight: bold;
+    color: hsl(180, 29%, 50%) ;
+}
+
+.CompaniesName {
+    color:hsl(180, 37%, 40%);
+    font-weight: bold;
+}
+
+.NewLabel {
+    background-color:hsl(180, 37%, 40%) ;
+    border-radius: 12px;
+    color: aliceblue;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8 8PX;
+}
+
+.FeaturedLabel{
+    background-color:hsl(0, 0%, 0%) ;
+    border-radius: 12px;
+    color: aliceblue;
+    width: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4PX;
+}
+
+.FirstRow {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 4px;
+}
+
+.Positions{
+    font-weight: bolder;
+}
+.LastRowInfo {
+    color: grey;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    font-size: 12PX;
+    padding-top: 4px;
+}
+
+ul li:first-child{
+    list-style-type:none ;
+}
+
+@media only screen and (max-width: 700px) {
+    .JobItem {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .Qualifications {
+        margin-left: 0;
+    }
+    .JobItem > img {
+        width: 45px;
+        position: relative;
+        top: -28px;
+    }
+    .JobInfo {
+        width: 100%;
+        gap: 10px;
+    }
+  }
